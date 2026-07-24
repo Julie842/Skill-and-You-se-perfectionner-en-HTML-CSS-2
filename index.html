@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atelier - Mettre en forme une page avec les conteneurs de texte</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      .main{
+          width: 800px;margin: 20px auto;
+          border: 10px #55557F double;border-radius: 10px;
+          padding: 10px;
+      }
+      .main h1{
+          text-align: center;
+          color: #55557F;text-transform: uppercase;letter-spacing: 5px;
+          text-shadow: 1px 1px 2px white;
+      }
+
+      address{ display: inline; }
+      
+      .biographie, .oeuvres {
+          text-align: left;
+          column-rule: 2px solid #55557F;
+          column-gap: 20px;
+      }
+      .biographie{column-count: 3;}
+      .oeuvres{column-count: 4;}
+      .biographie > h2, .oeuvres > h2 {
+          column-span: all;
+          border-bottom: 2px solid #55557F;
+      }
+      .oeuvres cite{
+          display: block;
+          border-bottom: 1px solid #55557F;
+          margin-bottom: 5px;
+      }
+    </style> 
+  </head>
+
+  <body>
+    <div class="main">
+      <h1>Léonard de Vinci</h1>
+      <div class="introduction">
+        <dfn>Léonard de Vinci</dfn> (<time datetime="1452">1452</time>-<time datetime="1519">1519</time>) était un artiste, inventeur, scientifique et polymathe italien de la Renaissance. Il est souvent considéré comme l'un des esprits les plus créatifs et talentueux de l'histoire de l'humanité.
+      </div>
+      <div class="biographie">
+        <h2>Biographie</h2>
+        <dfn>Léonard de Vinci</dfn> est né le <time datetime="1452-04-15">15 avril 1452</time> à <address>Vinci, en Italie</address>. Il a reçu une éducation diversifiée, couvrant des domaines tels que les arts, les sciences et les mathématiques. Très tôt, il a montré un talent exceptionnel pour le dessin et la peinture. Il a travaillé comme apprenti auprès de l'artiste florentin Andrea del Verrocchio et a acquis une solide formation artistique.
+      </div>
+      <div class="oeuvres">
+        <h2>Oeuvres</h2>
+        <cite>La Cène</cite> Il s'agit d'une fresque emblématique peinte sur le mur du réfectoire du monastère de <address>Santa Maria delle Grazie à Milan</address>. L'œuvre représente le dernier repas de Jésus avec ses disciples.
+        <cite>La Joconde</cite> Ce célèbre portrait, également connu sous le nom de Mona Lisa, est considéré comme l'une des peintures les plus célèbres et énigmatiques de l'histoire de l'art. Il est exposé au <address>musée du Louvre à Paris</address>.
+        <cite>La Vierge aux rochers</cite> C'est une série de deux peintures représentant la Vierge Marie avec l'enfant Jésus. L'une des versions se trouve à la <address>National Gallery de Londres</address>, tandis que l'autre est conservée au Louvre.
+        <cite>L'Homme de Vitruve</cite> Il s'agit d'un célèbre dessin représentant les proportions idéales du corps humain, basé sur les écrits de l'architecte romain Vitruve.
+      </div>
+    </div>
+  </body>
+
+</html>
